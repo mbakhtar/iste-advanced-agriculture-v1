@@ -192,32 +192,3 @@ basic.forever(function () {
         }
 })
 ```
-
-## @showhint
-``||Step 9||``
-Next, add the ``||logic:true||`` condition ``||input: on button A pressed||`` turn on the 
-``||fwdSensors:LED Light||`` of a particular color or ``||input : on button B pressed||`` the 
-``||logic: Else||`` condition the ``||fwdSensors:LED Light||`` should be turned off.
-Click on the bulb to show your hint.
-```blocks
-basic.showLeds(`
-    # . # . #
-    # . # . .
-    # # # . #
-    # . # . #
-    # . # . #
-    `)
-basic.forever(function () {
-    fwdSensors.ledRing.fwdSetAllPixelsColour(8323327)
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.thresholdDirection.over)) {
-        basic.showIcon(IconNames.Happy)
-        basic.clearScreen()
-        basic.pause(1000)
-    } else {
-        basic.showIcon(IconNames.Sad)
-        fwdMotors.pump.fwdTimedRun(2000)
-        basic.clearScreen()
-        basic.pause(1000)
-        }
-})
-```
