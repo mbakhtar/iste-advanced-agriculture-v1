@@ -229,7 +229,7 @@ basic.forever(function () {
 
 This repository can be added as an **extension** in MakeCode.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
+* open [Sustainable Agriculture : The Power of Innovation Tutorial v1](https://makecode.microbit.org/#tutorial:github:mbakhtar/iste-advanced-agriculture-v1/advancedagriculture)
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
 * search for **https://github.com/mbakhtar/iste-advanced-agriculture-v1** and import
