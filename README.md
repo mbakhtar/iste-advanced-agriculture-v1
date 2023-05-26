@@ -1,3 +1,34 @@
+> Open this page at [https://mbakhtar.github.io/iste-advanced-agriculture-v1/](https://mbakhtar.github.io/iste-advanced-agriculture-v1/)
+
+## Use as Extension
+
+This repository can be added as an **extension** in MakeCode.
+
+* open [Sustainable Agriculture : The Power of Innovation Tutorial v1](https://makecode.microbit.org/#tutorial:github:mbakhtar/iste-advanced-agriculture-v1/advancedagriculture)
+* click on **New Project**
+* click on **Extensions** under the gearwheel menu
+* search for **https://github.com/mbakhtar/iste-advanced-agriculture-v1** and import
+
+## Edit this project ![Build status badge](https://github.com/mbakhtar/iste-advanced-agriculture-v1/workflows/MakeCode/badge.svg)
+
+To edit this repository in MakeCode.
+
+* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
+* click on **Import** then click on **Import URL**
+* paste **https://github.com/mbakhtar/iste-advanced-agriculture-v1** and click import
+
+## Blocks preview
+
+This image shows the blocks code from the last commit in master.
+This image may take a few minutes to refresh.
+
+![A rendered view of the blocks](https://github.com/mbakhtar/iste-advanced-agriculture-v1/raw/master/.github/makecode/blocks.png)
+
+#### Metadata (used for search, rendering)
+
+* for PXT/microbit
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+
 # Sustainable Agriculture : The Power of Innovation 
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
@@ -192,64 +223,3 @@ basic.forever(function () {
         }
 })
 ```
-
-## @showhint
-``||Step 9||``
-Next, add the ``||logic:true||`` condition ``||input: on button A pressed||`` turn on the 
-``||fwdSensors:LED Light||`` of a particular color or ``||input : on button B pressed||`` the 
-``||logic: Else||`` condition the ``||fwdSensors:LED Light||`` should be turned off.
-Click on the bulb to show your hint.
-```blocks
-basic.showLeds(`
-    # . # . #
-    # . # . .
-    # # # . #
-    # . # . #
-    # . # . #
-    `)
-basic.forever(function () {
-    fwdSensors.ledRing.fwdSetAllPixelsColour(8323327)
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.thresholdDirection.over)) {
-        basic.showIcon(IconNames.Happy)
-        basic.clearScreen()
-        basic.pause(1000)
-    } else {
-        basic.showIcon(IconNames.Sad)
-        fwdMotors.pump.fwdTimedRun(2000)
-        basic.clearScreen()
-        basic.pause(1000)
-        }
-})
-```
-
-
-> Open this page at [https://mbakhtar.github.io/iste-advanced-agriculture-v1/](https://mbakhtar.github.io/iste-advanced-agriculture-v1/)
-
-## Use as Extension
-
-This repository can be added as an **extension** in MakeCode.
-
-* open [Sustainable Agriculture : The Power of Innovation Tutorial v1](https://makecode.microbit.org/#tutorial:github:mbakhtar/iste-advanced-agriculture-v1/advancedagriculture)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/mbakhtar/iste-advanced-agriculture-v1** and import
-
-## Edit this project ![Build status badge](https://github.com/mbakhtar/iste-advanced-agriculture-v1/workflows/MakeCode/badge.svg)
-
-To edit this repository in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/mbakhtar/iste-advanced-agriculture-v1** and click import
-
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/mbakhtar/iste-advanced-agriculture-v1/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
