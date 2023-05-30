@@ -43,6 +43,9 @@ basic.forever(function () {
     fwdSensors.ledRing.fwdSetAllPixelsColour(10)
 ```
 ## Step 4
+To show when your plant needs watering or not, go to the ``||basic:basic||`` drawer 
+and drag the ``||basic:show leds||`` ``||basic:show icon||`` block nest it under the ``||logic:if||`` condition. 
+Change the icons to a smiley ``||basic: :)||`` and ``||basic: :(||``.
 In this step, add the conditional ``||logic:If Else||`` statement block from 
 ``||logic: Logic||`` drawer.
 Click on the bulb to show your hint.
@@ -63,6 +66,8 @@ basic.forever(function () {
 })
 ```
 ## Step 5
+Check your code by downloading and holding the moisture sensor between your fingers. 
+When you pinch it will mimic moisture and display a ``||basic: :)||`` face and when you let go, it should display ``||basic: :(||``.
 To show when your plant needs watering or not, go to the “basic” drawer and drag “show icon” to both the “if” conditions in your “if else” block. Change the icons to “:)” and “:(“
 The ``||fwdSensors:LED Light||`` is set to a particular color to enhance 
 plant growth and supplement the absence of sunlight. Now we will control the operation
@@ -86,7 +91,9 @@ basic.forever(function () {
         }
 })
 ```
-## Step 5
+## Step 6
+Now to water your plant automatically when the soil is dry, go to the ``||fwdMotors:Motors||`` drawer 
+ and add ``||fwdMotors:run pump for 500||`` under the ``||basic: :(||`` in the ``||logic:If Else||`` block.
 Let's add a bit of animation to our code to indicate that our plant is happy
 and does not need more water. Go to the ``||basic:basic||`` drawer and drag
 ``||basic:show icon||`` block nest it under the ``||logic:if||`` condition.
@@ -108,7 +115,9 @@ basic.forever(function () {
         }
 })
 ```
-## Step 6
+## Step 7
+"To let the water soak in before your moisture sensor reads again, go to your ``||basic:on start||`` drawer 
+to add a ``||basic:pause (ms) 500||`` and a ``||basic:clear screen||`` block after your find ``||fwdMotors:run pump for 500||`` block.
 If the plant is happy and does not need water, let's flash the smiley ``||basic::)||`` face.
 For the flashing action, the smiley ``||basic::)||`` has to disappear and reappear, right? To do this,
 go to ``||basic: basic||`` drawer and find ``||basic:clear screen||`` block. This would
@@ -135,7 +144,9 @@ basic.forever(function () {
         }
 })
 ```
-## Step 7
+## Step 8
+Clip your moisture sensor onto the side rail and place your tube into another empty cup. 
+Then download your code to test your automated watering system.
 What if our plant is sad and needs water? Let's add a sad smiley 
 ``||basic: :(||`` block to the ``||logic:else||`` condition. 
 Click on the bulb to show your hint.
@@ -159,7 +170,8 @@ basic.forever(function () {
 })
 ```
 
-## Step 8
+## Step 9
+Congratulations on completing your Automatic Irrigation System! - everyone can use tech to make the world a better place! Go back to the Forward Edu lesson for more activities and extensions"
 The flashing sad smiley ``||basic::(||`` indicates the plant needs water. So, the 
 water pump should run and pump water. To add this coding block, go to ``||fwdMotors:Motors||``
 block and find ``||fwdMotors:run pump for 500||``. Nest this block under the sad smiley
