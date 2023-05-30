@@ -4,8 +4,7 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ledRing=github:climate-action-kits/pxt-fwd-edu
 soilMoisture=github:climate-action-kits/pxt-fwd-edu
 ```
-## 
-``||Step 1||`` 
+## Step 1
 On your screen you can see a ``||basic: on start||`` block and a ``||basic:forever||``
 block. Insert or nest a ``||basic: show leds||`` under the ``||basic:on start||``.
 Click on the squares of the ``||basic:show leds||`` to turn the ``||basic:leds||``
@@ -20,8 +19,7 @@ basic.showLeds(`
     # . # . #
     `)
 ```
-## 
-``||Step 2||``
+## Step 2
 Click on the ``||fwdSensors:Sensors||`` drawer. 
 Find the ``||fwdSensors:set all ledRing LEDs to 10||`` block. 
 Drag the block and nest it under ``||basic:forever loop||`` on the main screen.
@@ -38,8 +36,7 @@ basic.forever(function () {
     fwdSensors.ledRing.fwdSetAllPixelsColour(10)
 ```
 
-## 
-``||Step 3||``
+## Step 3
 In this step, add the conditional ``||logic:If Else||`` statement block from 
 ``||logic: Logic||`` drawer.
 Click on the bulb to show your hint.
@@ -59,8 +56,7 @@ basic.forever(function () {
         }
 })
 ```
-## 
-``||Step 4||``
+## Step 4
 The ``||fwdSensors:LED Light||`` is set to a particular color to enhance 
 plant growth and supplement the absence of sunlight. Now we will control the operation
 of the ``||Smart Irrigation System||``. To water the plants the ``||water pump||`` 
@@ -83,8 +79,7 @@ basic.forever(function () {
         }
 })
 ```
-## 
-``||Step 5||``
+## Step 5
 Let's add a bit of animation to our code to indicate that our plant is happy
 and does not need more water. Go to the ``||basic:basic||`` drawer and drag
 ``||basic:show icon||`` block nest it under the ``||logic:if||`` condition.
@@ -106,8 +101,7 @@ basic.forever(function () {
         }
 })
 ```
-## @showhint 
-``||Step 6||``
+## Step 6
 If the plant is happy and does not need water, let's flash the smiley ``||basic::)||`` face.
 For the flashing action, the smiley ``||basic::)||`` has to disappear and reappear, right? To do this,
 go to ``||basic: basic||`` drawer and find ``||basic:clear screen||`` block. This would
@@ -134,8 +128,7 @@ basic.forever(function () {
         }
 })
 ```
-## @showhint
-``||Step 7||``
+## Step 7
 What if our plant is sad and needs water? Let's add a sad smiley 
 ``||basic: :(||`` block to the ``||logic:else||`` condition. 
 Click on the bulb to show your hint.
@@ -159,8 +152,7 @@ basic.forever(function () {
 })
 ```
 
-## @showhint
-``||Step 8||``
+## Step 8
 The flashing sad smiley ``||basic::(||`` indicates the plant needs water. So, the 
 water pump should run and pump water. To add this coding block, go to ``||fwdMotors:Motors||``
 block and find ``||fwdMotors:run pump for 500||``. Nest this block under the sad smiley
