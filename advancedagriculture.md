@@ -8,7 +8,7 @@ soilMoisture=github:climate-action-kits/pxt-fwd-edu
 Plug your USB cable into the micro:bit and insert it into the Climate Action Kit board. Click on the button to the right of download and follow the steps to pair your micro:bit.
 
 ## Step 2
-Click on the “Sensors” drawer and find the “Set all ledRing LEDs to 10” block. Drag the block under the forever loop and hit download to activate your LED.
+Click on the ``||fwdSensors:Sensors||`` drawer and find the ``||fwdSensors:set all ledRing LEDs to 10||``block. Drag the block under the ``||basic:forever||`` loop and hit download to activate your LED.
 On your screen you can see a ``||basic: on start||`` block and a ``||basic:forever||``
 block. Insert or nest a ``||basic: show leds||`` under the ``||basic:on start||``.
 Click on the squares of the ``||basic:show leds||`` to turn the ``||basic:leds||``
@@ -24,7 +24,9 @@ basic.showLeds(`
     `)
 ```
 ## Step 3
-Open the “Logic” drawer and add an “If Else” to your code. Click the “Sensors” drawer and add “Is soilmoisture1 moisture level over 5% to the “true” condition of the “If Else” block.
+Open the ``||logic:Logic||``drawer and add an ``||logic:If Else||`` to your code. Click the ``||fwdSensors:Sensors||``
+drawer and add ``||fwdSensors:is soilmoisture1 moisture level over 5%||`` to the ``||logic:true||`` condition of the 
+``||logic:If Else||`` block.
 Click on the ``||fwdSensors:Sensors||`` drawer. 
 Find the ``||fwdSensors:set all ledRing LEDs to 10||`` block. 
 Drag the block and nest it under ``||basic:forever loop||`` on the main screen.
@@ -40,7 +42,6 @@ basic.showLeds(`
 basic.forever(function () {
     fwdSensors.ledRing.fwdSetAllPixelsColour(10)
 ```
-
 ## Step 4
 In this step, add the conditional ``||logic:If Else||`` statement block from 
 ``||logic: Logic||`` drawer.
