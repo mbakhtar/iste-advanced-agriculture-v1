@@ -5,6 +5,10 @@ ledRing=github:climate-action-kits/pxt-fwd-edu
 soilMoisture=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Step 1
+Plug your USB cable into the micro:bit and insert it into the Climate Action Kit board. Click on the button to the right of download and follow the steps to pair your micro:bit.
+
+## Step 2
+Click on the “Sensors” drawer and find the “Set all ledRing LEDs to 10” block. Drag the block under the forever loop and hit download to activate your LED.
 On your screen you can see a ``||basic: on start||`` block and a ``||basic:forever||``
 block. Insert or nest a ``||basic: show leds||`` under the ``||basic:on start||``.
 Click on the squares of the ``||basic:show leds||`` to turn the ``||basic:leds||``
@@ -19,7 +23,8 @@ basic.showLeds(`
     # . # . #
     `)
 ```
-## Step 2
+## Step 3
+Open the “Logic” drawer and add an “If Else” to your code. Click the “Sensors” drawer and add “Is soilmoisture1 moisture level over 5% to the “true” condition of the “If Else” block.
 Click on the ``||fwdSensors:Sensors||`` drawer. 
 Find the ``||fwdSensors:set all ledRing LEDs to 10||`` block. 
 Drag the block and nest it under ``||basic:forever loop||`` on the main screen.
@@ -36,7 +41,7 @@ basic.forever(function () {
     fwdSensors.ledRing.fwdSetAllPixelsColour(10)
 ```
 
-## Step 3
+## Step 4
 In this step, add the conditional ``||logic:If Else||`` statement block from 
 ``||logic: Logic||`` drawer.
 Click on the bulb to show your hint.
@@ -56,7 +61,8 @@ basic.forever(function () {
         }
 })
 ```
-## Step 4
+## Step 5
+To show when your plant needs watering or not, go to the “basic” drawer and drag “show icon” to both the “if” conditions in your “if else” block. Change the icons to “:)” and “:(“
 The ``||fwdSensors:LED Light||`` is set to a particular color to enhance 
 plant growth and supplement the absence of sunlight. Now we will control the operation
 of the ``||Smart Irrigation System||``. To water the plants the ``||water pump||`` 
